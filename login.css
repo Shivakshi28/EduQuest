@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: url('abc.jpg.webp') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    animation: moveBackground 30s linear infinite;
+  }
+  @keyframes moveBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  .box.login_box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Input fields */
+  .inputbox {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .inputbox input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 12px 0;
+    pointer-events: none;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputbox input:focus ~ span,
+  .inputbox input:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #00aaff;
+  }
+  
+  /* Links like forgot password and sign up */
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .links a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+    color: #00aaff;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #0033cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background: #0055ff;
+  }
+  
+  /* Dismissable message box */
+  .message {
+    position: absolute;
+    top: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .message i {
+    cursor: pointer;
+  }
+  

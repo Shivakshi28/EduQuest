@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "pro",
+			"path": "."
+		},
+		{
+			"name": "courses",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/courses"
+		},
+		{
+			"name": "game",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/game"
+		},
+		{
+			"name": "game2",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/game2"
+		},
+		{
+			"name": "game3",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/game3"
+		},
+		{
+			"name": "game4",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/game4"
+		},
+		{
+			"name": "quiz",
+			"path": "../../Desktop/6thSemProject/src/main/resources/static/quiz"
+		}
+	],
+	"settings": {}
+}
